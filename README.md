@@ -1,1 +1,4 @@
 # java
+*class
+bin\
+.classpath
