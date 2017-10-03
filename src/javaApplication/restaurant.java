@@ -11,6 +11,10 @@ public class restaurant {
 	
 	public static double total = 0;
 	
+	static int price = 0, ch = 0, qty = 0, pz = 0, ck = 0, coke = 0, sp = 0, h = 0;
+	
+	static Scanner sc = new Scanner(System.in);
+	
 	public static double change;
 	
         public static void head(int h) {
@@ -120,6 +124,7 @@ public class restaurant {
         }
         change = money%size;
 }
+ 
     public static void coin(double size,double money) {
     	if ((int)(money/size) != 0) {
     		System.out.println((int)size+" coins: " + (int)(money/size));
@@ -129,11 +134,8 @@ public class restaurant {
         change = money%size;
 }
 	
-    public static void main (String[] args) {
-    	Scanner sc = new Scanner(System.in);
-    	int price = 0, ch = 0, qty = 0, pz = 0, ck = 0, coke = 0, sp = 0, h = 0;
-    	head(h);
-       	while (true) {
+    public static void loopMenu() {    	
+    	while (true) {
     		System.out.println(" ");
        		System.out.print("Enter your Choice: ");
     		ch = sc.nextInt();
@@ -154,12 +156,20 @@ public class restaurant {
         			coke = coke + qty;
         		}
     		}    		
-    	}    	
+    	}
+    }
+	
+    public static void main (String[] args) {
+    	
+    	head(h);
+       	loopMenu();
+       	
        	System.out.print("Do you have member card?: ");
        	mc = sc.next();
        	outt(pz,ck,sp,coke);
        	System.out.println(" ");
        	System.out.print("Input your cash: ");
+       	
        	double cash = sc.nextDouble();
        	double chnge = Math.floor(cash-total);
         System.out.printf("Change : %.2f\n",chnge);
