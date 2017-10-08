@@ -1,4 +1,1 @@
-# java
-*class
-bin\
-.classpath
+#ske-restaurant by Tanasorn Tritawisup
