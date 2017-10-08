@@ -3,6 +3,7 @@ package javaApplication;
 import java.util.Scanner;
 
 public class restaurant {
+<<<<<<< HEAD
 
     static Scanner sc = new Scanner(System.in);
 	
@@ -12,6 +13,15 @@ public class restaurant {
 	
     static int price = 0, ch = 0, qty = 0, pz = 0, ck = 0, coke = 0, sp = 0, h = 0, totalq = 0;
 	
+=======
+	
+    static String mc = "";
+	
+    static double total, totalp, cash, chnge, mem, change;
+	
+    static int price = 0, ch = 0, qty = 0, pz = 0, ck = 0, coke = 0, sp = 0, h = 0, totalq = 0;
+	
+>>>>>>> 9e483cd06df884685020d75f705c20c4ed88b8e1
     public static void head(int h) {
 	        System.out.println("============= Welcome to SKE Restaurant ===========");
     	        System.out.println("1.) Pizza                               250 Baht.");
@@ -132,6 +142,11 @@ public class restaurant {
     	}
     }
     
+<<<<<<< HEAD
+=======
+    static Scanner sc = new Scanner(System.in);
+    
+>>>>>>> 9e483cd06df884685020d75f705c20c4ed88b8e1
     public static void mchange(double mon) {
        	System.out.println(" ");
        	System.out.print("Input your cash: ");
@@ -159,4 +174,8 @@ public class restaurant {
        	outt(pz,ck,sp,coke);
         mchange(cash);
     }	 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9e483cd06df884685020d75f705c20c4ed88b8e1
