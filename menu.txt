@@ -1,5 +1,0 @@
-Pizza;250;
-Chickens;120;
-Spaghetti;150;
-Coke;45;
-Pad Thai;25;
