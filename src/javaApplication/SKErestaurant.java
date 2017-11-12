@@ -8,7 +8,7 @@ import java.util.Scanner;
  * It displays a menu and accepts items to order.
  * When done, it prints a receipt including the order total.
  *
- * @author Tanasorn
+ * @author Tanasorn Tritawisup
  */
 
 public class SKErestaurant {
@@ -21,6 +21,7 @@ public class SKErestaurant {
 	    static String mc = "";		
 	    static double total, totalp, cash, chnge, mem, change;		
 	    static int ch = 0, totalq = 0, qty = 0;
+	    static int[] money = {1000, 500, 100, 50, 20, 10, 5, 2, 1}; 
 	
 		public static ArrayList<Food> readMenu(String menu){
 			Scanner sc = new Scanner(menu);
@@ -121,8 +122,6 @@ public class SKErestaurant {
 	        }
 	        change = money%size;
 	    }
-	    
-	    static int[] money = {1000, 500, 100, 50, 20, 10, 5, 2, 1}; 
 	    
 	    public static void mchange(double mon) {
 	       	System.out.println(" ");

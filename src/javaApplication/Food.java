@@ -1,5 +1,13 @@
 package javaApplication;
 
+/**
+ * The Food class.
+ * This class is used to get name and price of food. 
+ * It can also get and add quantity.
+ *
+ * @author Tanasorn Tritawisup
+ */
+
 public class Food {
 	String name;
 	double price;
