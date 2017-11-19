@@ -1,4 +1,4 @@
-
+package javaApplication;
 
 /**
  * The Food class.
