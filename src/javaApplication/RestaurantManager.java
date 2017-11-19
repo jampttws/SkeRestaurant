@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class RestaurantManager {
 
-	static final String MENU_FILE = "data/menu.txt";
+	static final String MENU_FILE = "javaApplication/menu.txt";
 
 	public static String readFile() {
 		ClassLoader loader = RestaurantManager.class.getClassLoader();
